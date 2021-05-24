@@ -1,0 +1,382 @@
+@import url(../fonts/stylesheet.css);
+*::before, *::after {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* header */
+header {
+  padding: 205px 0 170px 0;
+  background-image: url(../images/hero-bg.png);
+  background-position-x: 39px;
+}
+
+header .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  header .left-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header .left-side img {
+  max-width: 385px;
+}
+
+header .left-side p {
+  font-size: 18px;
+  color: #3C3E42;
+}
+
+@media screen and (max-width: 425px) {
+  header .left-side {
+    margin-bottom: 30px;
+  }
+}
+
+header .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .right-side ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  header .right-side ul {
+    padding-top: 130px;
+  }
+}
+
+header .right-side ul li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+header .right-side ul li img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  header .right-side {
+    margin-bottom: 40px;
+  }
+}
+
+header .header-second-stage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+header .header-second-stage ul li {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+header .header-second-stage ul li img {
+  max-width: 100%;
+}
+
+header .header-second-stage .right-side .text-content p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768.1px) {
+  header .header-second-stage .right-side .text-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding-bottom: 0px;
+  }
+}
+
+.after-line {
+  position: relative;
+}
+
+.after-line::after {
+  content: "";
+  background-image: url(../images/yellow-line.svg);
+  position: absolute;
+  bottom: -30px;
+  left: -20px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+main {
+  background-image: url(../images/main-bg.png);
+  background-position: 209% 10%;
+  padding-bottom: 200px;
+}
+
+main .left-side img {
+  width: 100%;
+  max-width: 500px;
+}
+
+main .left-side .picture {
+  position: relative;
+}
+
+main .left-side .picture .text-content {
+  left: 90px;
+  bottom: -53px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768.1px) {
+  main .left-side .picture .text-content {
+    left: 120px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024.1px) {
+  main .left-side .picture .text-content {
+    font-size: 30px;
+  }
+}
+
+main .left-side .btn {
+  margin-top: 175px;
+}
+
+@media screen and (max-width: 425px) {
+  main .left-side .btn {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main .left-side {
+    margin-bottom: 40px;
+  }
+}
+
+main .right-side .small-title img {
+  max-width: 40px;
+}
+
+@media screen and (max-width: 425px) {
+  main .right-side .small-title {
+    margin: 0;
+  }
+}
+
+main .right-side .sound-box {
+  max-width: 1000px;
+  padding: 10px;
+}
+
+main .right-side .sound-box .sound-box_header {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+main .right-side .sound-box .sound-box_header .airphones {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 425px) {
+  main .right-side .sound-box .sound-box_header .airphones {
+    max-width: 130px;
+  }
+}
+
+main .right-side .sound-box .sound-box_header::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/airphones.png);
+  width: 100px;
+  z-index: 10000;
+}
+
+main .right-side .sound-box .sound-box_header .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .right-side .sound-box .sound-box_header .image img {
+  max-width: 100%;
+}
+
+main .right-side .sound-box .airphones {
+  position: absolute;
+  right: 0;
+  top: -90px;
+}
+
+@media screen and (max-width: 425px) {
+  main .right-side .sound-box .airphones {
+    max-width: 130px;
+  }
+}
+
+main .right-side .sound-box .sound-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  main .right-side .sound-box small {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+main .right-side .sound-box_content {
+  padding: 40px 25px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+main .right-side .sound-box_content .before-cloud {
+  background-size: contain;
+  left: -50px;
+  top: -34px;
+  position: absolute;
+  max-width: 110px;
+}
+
+main .right-side .sound-box_content .square-icon {
+  max-width: 135px;
+  left: -60px;
+  bottom: -68px;
+  z-index: -100;
+}
+
+@media screen and (min-width: 768.1px) {
+  main .right-side .sound-box_content {
+    padding: 40px 70px;
+  }
+}
+
+main .right-side audio {
+  width: 100%;
+}
+
+main .left-ellipse {
+  left: -250px;
+  bottom: -350px;
+}
+
+@media screen and (max-width: 768px) {
+  main .left-ellipse {
+    max-width: 300px;
+    left: -150px;
+    bottom: -170px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main .left-ellipse {
+    max-width: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+}
+
+main .right-ellipse {
+  right: -350px;
+  bottom: -500px;
+}
+
+@media screen and (max-width: 768px) {
+  main .right-ellipse {
+    max-width: 400px;
+    right: -200px;
+    bottom: -200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main .right-ellipse {
+    max-width: 300px;
+    right: -150px;
+    bottom: -180px;
+  }
+}
+
+main .main-btn {
+  margin-top: 250px;
+}
+
+@media screen and (max-width: 425px) {
+  main .main-btn {
+    margin-top: 75px;
+  }
+}
+
+main iframe {
+  width: 100%;
+}
+
+.shape {
+  position: absolute;
+}
+/*# sourceMappingURL=mainStyle.css.map */
