@@ -1,0 +1,66 @@
+.avatar-circle{
+	position: absolute;
+    left: 31%;
+    top: 42%;
+    z-index: -9;
+    width: 38%;
+}
+.thankyou-section .content-section .text-heading{
+	margin-bottom: 5rem;
+}
+.text-heading{
+	/*font-family: Roboto Condensed;*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 4.2vw;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #0C0906;
+}
+.description-text{
+	/*font-family: Gilroy;*/
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+    line-height: 2.5rem;
+    color: #000;
+}
+.play-section .circle{
+	background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    left: 43%;
+    opacity: .5;
+}
+.play-section .play{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+.podcast-caption{
+	font-size: 24px;
+}
+/****** Responsive ******/
+@media (max-width: 1200px){
+	.text-heading {
+	    font-size: calc(1rem + 2vw) !important;
+	    line-height: 1.5;
+	}
+	.description-text{
+		font-size: calc(30px + 6 * ((100vw - 1100px)/ 800));
+	}
+	.play-section .circle{
+		background: white;
+	    width: 50px;
+	    height: 50px;
+	}
+	.play-section .play {
+	    top: 35%;
+        left: 43%;
+        width: 15%;
+	}
+}
