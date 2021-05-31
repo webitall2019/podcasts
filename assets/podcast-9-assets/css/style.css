@@ -16640,21 +16640,9 @@ section.shadow, .section.shadow {
 .coo img {
   width: 100%;
 }
-@media screen and (max-width: 425px) {
-  .coo .container {
-    padding-bottom: 10rem;
-    
-  }
-  .coo h3 {
-    font-size: 20px;
-  }
-  .coo span{
-    font-size: 14px;
-  }
-}
 
 /*===========================
-PODCAST # 1 
+PODCAST # 9
 
 MAIN  STYLES 
 =============================*/
@@ -16663,8 +16651,13 @@ header{
   background-image: url(../images/hero-bg.svg);
   background-position: bottom center;
 }
-
-
+#main > div{
+  background: transparent;
+  color: red;
+}
+#main {
+  background: transparent;
+}
 
 
 

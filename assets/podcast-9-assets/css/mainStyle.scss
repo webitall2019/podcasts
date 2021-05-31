@@ -17,7 +17,6 @@ h1{
 header{
   padding: 205px 0 170px 0;
   background-image: url(../images/hero-bg.png);
-  background-position-x: 39px;
     .left-side{
       display: flex;
       align-items: center;
@@ -100,16 +99,15 @@ header{
   background-image: url(../images/yellow-line.svg);
   position: absolute;
   bottom: -30px;
-  left: -20px;
   height: 10px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
 }
 // main
 main {
   background-image: url(../images/main-bg.png);
-  background-position: 209% 10%;
+ // background-position: 209% 10%;
   padding-bottom: 200px;
   .left-side {
     
